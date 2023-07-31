@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Содержимое рабочей директории</title>
+</head>
+<body>
+    {% for elem in lst %}
+    <b>{{ elem }}</b>
+    <br>
+    {% endfor %}
+    <a href = "{% url 'home' %}"><button>Back</button></a>
+</body>
+</html>
