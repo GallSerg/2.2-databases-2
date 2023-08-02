@@ -16,5 +16,11 @@
             </div>
             {% endfor %}
         </div>
+    {% if pub_date_prev %}
+        <a class="button button-primary" href="{{ pub_date_prev.pub_date|date:'Y-m-d' }}">⟵ {{ pub_date_prev.pub_date|date:"Y-m-d" }}   </a>
+    {% endif %}
+    {% if pub_date_next %}
+        <a class="button button-primary" href="{{ pub_date_next.pub_date|date:'Y-m-d' }}">   {{ pub_date_next.pub_date|date:"Y-m-d" }} ⟶</a>
+    {% endif %}
     </div>
 {% endblock %}
